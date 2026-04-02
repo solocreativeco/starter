@@ -1,0 +1,12 @@
+---
+id: page-head
+name: Page Head
+type: singleton
+---
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title | default("My Site") }}</title>
+<meta name="description" content="{{ description | default('') }}">
+<link rel="stylesheet" href="/assets/css/reset.css">
+<link rel="stylesheet" href="/assets/css/foundation.css">
+<link rel="stylesheet" href="/assets/css/global.css">

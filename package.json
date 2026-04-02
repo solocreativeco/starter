@@ -1,0 +1,12 @@
+{
+  "name": "kona-starter",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.js",
+    "start": "NODE_ENV=production bun run index.js"
+  },
+  "dependencies": {
+    "@kona.io/core": "^0.0.4"
+  }
+}

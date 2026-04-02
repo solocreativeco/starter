@@ -1,0 +1,25 @@
+---
+id: homepage
+name: Homepage
+category: General
+description: A simple homepage with hero section and card grid
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<PageHead title="Welcome" description="A site built with Kona" />
+	<link rel="stylesheet" href="/templates/homepage/homepage.css">
+</head>
+<body>
+	<main>
+		<section class="hero" k-content="page">
+			<h1>{{ heading | default("Welcome to Kona") }}</h1>
+			<p>{{ subheading | default("Edit this page in the CMS at /kona") }}</p>
+		</section>
+
+		<section class="cards" k-collection="cards">
+			<Card />
+		</section>
+	</main>
+</body>
+</html>
